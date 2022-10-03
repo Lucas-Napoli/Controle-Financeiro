@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/Estilo.css">
+  <title>Lian Consultoria</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="Logo" src="imagens/download.png" alt="">
+      <ul class="menu">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Controle de Finanças</h1>
+  <p>Cadastre e tenha controle de suas compras </p>
+
+  <main class="Container-main">
+    <div class="Container-Form">
+      <form action="">
+        <label for="Nome">Nome do Produto:</label>
+        <input type="text"> <br>
+
+        <label for="Preço">Preço:</label>
+        <input type="number" name="Preco" id="Preco"> <br>
+
+        <label for="Data">Data da compra:</label>
+        <input type="date" name="Data" id="data" class="Data"> <br>
+
+        <label for="ModoPagamento">Metodo de Pagamento:</label>
+        <input type="checkbox" id="CartaoCredito" name="CartaoCredito" value="Credito">
+        <label for="CartaoCredito"> Cartão de Crédito</label>
+        <input type="checkbox" id="CartaoDebito" name="CartaoDebito" value="Debito">
+        <label for="CartaoCredito"> Cartão de Débito</label>
+        <input type="checkbox" id="Dinheiro" name="Dinheiro" value="Dinheiro">
+        <label for="CartaoCredito"> Dinheiro</label> <br>
+
+        <label>Situação de Pagamento:</label>
+        <label for="Pago">Pago</label>
+        <input id="Pago" type="radio" name="Pago">
+        <label for="NaoPago">Não Pago</label>
+        <input id="NaoPago" type="radio" name="NaoPago"> <br>
+
+        <button class="Salvar">Salvar💾</button>
+        <button class="Limpar">Limpar🧹</button>
+      </form>
+    </div>
+
+    <div class="Container-Tabela">
+      <table class="tabela">
+        <thead>
+          <tr id="titulo">
+            <th colspan="7">Controle Financeiro</th>
+          </tr>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Data Aquisição</th>
+            <th>Metodo de Pagamento</th>
+            <th>Situação</th>
+            <th colspan="2">Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Calça</td>
+            <td>$45,00</td>
+            <td>19/06/2022</td>
+            <td>Cartão de Crédito</td>
+            <td>Pago</td>
+            <td><button class="Opcoes"><img src="imagens/Excluir.png" alt=""></button></td>
+            <td><button class="Opcoes"><img class="Opcoes" src="imagens/Editar.png" alt=""></button></td>
+
+          </tr>
+          <tr>
+            <td>Livro</td>
+            <td>$28,90</td>
+            <td>15/07/2022</td>
+            <td>Dinheiro</td>
+            <td>Pago</td>
+            <td><button class="Opcoes"><img src="imagens/Excluir.png" alt=""></button></td>
+            <td><button class="Opcoes"><img class="Opcoes" src="imagens/Editar.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td>Tenis</td>
+            <td>$150,00</td>
+            <td>22/08/2022</td>
+            <td>Cartão de Crédito</td>
+            <td>Não Pago</td>
+            <td><button class="Opcoes"><img src="imagens/Excluir.png" alt=""></button></td>
+            <td><button class="Opcoes"><img class="Opcoes" src="imagens/Editar.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td>Supermecado</td>
+            <td>$215,20</td>
+            <td>22/08/2022</td>
+            <td>Cartão de Débito</td>
+            <td>Pago</td>
+            <td><button class="Opcoes"><img src="imagens/Excluir.png" alt=""></button></td>
+            <td><button class="Opcoes"><img class="Opcoes" src="imagens/Editar.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td>Fones de Ouvido</td>
+            <td>$25,00</td>
+            <td>19/09/2022</td>
+            <td>Dinheiro</td>
+            <td>Pago</td>
+            <td><button class="Opcoes"><img src="imagens/Excluir.png" alt=""></button></td>
+            <td><button class="Opcoes"><img class="Opcoes" src="imagens/Editar.png" alt=""></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>
